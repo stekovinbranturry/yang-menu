@@ -1,0 +1,101 @@
+{
+  "title": "杨家大院私房菜",
+  "categories": [
+    {
+      "name": "肉菜",
+      "items": [
+        { "name": "米椒圈肥牛", "price": 45 },
+        { "name": "山笋炒腌肉", "price": 38 },
+        { "name": "酸菜鱼", "price": 58 },
+        { "name": "杨家炒鸡", "price": 45 },
+        { "name": "罗山大肠", "price": 42 },
+        { "name": "傣族牛腩", "price": 38 },
+        { "name": "肉片炒山菌", "price": 32 },
+        { "name": "东坡肉", "price": 38 },
+        { "name": "剁椒鱼头", "price": 68 },
+        { "name": "酱焖黄骨鱼", "price": 38 },
+        { "name": "干锅牛蛙", "price": 58 },
+        { "name": "熬炒土鸡", "price": 58 },
+        { "name": "干煸翅中", "price": 48 },
+        { "name": "过浆鱼", "price": 48 },
+        { "name": "小炒黄牛肉", "price": 48 },
+        { "name": "湘味小炒肉", "price": 30 },
+        { "name": "醋焖大鲤鱼", "price": 28 },
+        { "name": "金饼回锅肉", "price": 32 },
+        { "name": "红烧肥肠头", "price": 48 },
+        { "name": "糖醋里脊", "price": 28 },
+        { "name": "鱼香肉丝", "price": 28 },
+        { "name": "水煮肉片", "price": 28 },
+        { "name": "毛血旺", "price": 48 },
+        { "name": "锅巴三鲜", "price": 32 },
+        { "name": "腰果虾仁", "price": 58 },
+        { "name": "木桶水滑肉", "price": 28 },
+        { "name": "干锅牛腩", "price": 58 },
+        { "name": "铁板鱿鱼须", "price": 38 },
+        { "name": "爆炒虾尾", "price": 58 },
+        { "name": "西红柿炖牛腩", "price": 58 },
+        { "name": "健腐肉", "price": 26 },
+        { "name": "锅巴大虾", "price": 48 },
+        { "name": "辣子鸡", "price": 48 },
+        { "name": "鱿鱼爱上虾", "price": 68 },
+        { "name": "香麻牛黄喉", "price": 42 }
+      ]
+    },
+    {
+      "name": "素菜",
+      "items": [
+        { "name": "螺丝椒荷包蛋", "price": 18 },
+        { "name": "脆皮小南瓜", "price": 15 },
+        { "name": "风味土豆片", "price": 18 },
+        { "name": "蒜香空心菜", "price": 15 },
+        { "name": "小炒鹿茸菌", "price": 28 },
+        { "name": "淋油豆皮", "price": 16 },
+        { "name": "椒麻素毛肚", "price": 22 },
+        { "name": "剁椒嫩豆腐", "price": 18 },
+        { "name": "米椒臭豆腐", "price": 22 },
+        { "name": "脆皮茄子", "price": 18 },
+        { "name": "滑蛋豆腐", "price": 26 },
+        { "name": "麻婆豆腐", "price": 16 },
+        { "name": "豆角焖杭茄", "price": 16 },
+        { "name": "醋焖粉皮", "price": 18 },
+        { "name": "干锅有机花菜", "price": 18 },
+        { "name": "蒜蓉粉丝娃娃菜", "price": 16 },
+        { "name": "包菜粉丝", "price": 16 },
+        { "name": "鱼香茄子煲", "price": 22 },
+        { "name": "小白菜炕豆腐", "price": 16 },
+        { "name": "芝麻叶炖豆腐", "price": 18 },
+        { "name": "拔丝红薯", "price": 18 },
+        { "name": "蛋黄焗腐竹", "price": 22 },
+        { "name": "干锅千叶豆腐", "price": 22 },
+        { "name": "木桶烩三菌", "price": 22 },
+        { "name": "烧三样", "price": 18 },
+        { "name": "石锅凉粉", "price": 18 }
+      ]
+    },
+    {
+      "name": "汤类",
+      "items": [
+        { "name": "肚丝汤", "price": 28 },
+        { "name": "鸡蛋汤", "price": 12 },
+        { "name": "玉米羹", "price": 12 },
+        { "name": "豆腐汤", "price": 14 },
+        { "name": "红薯汤", "price": 14 },
+        { "name": "白丸汤", "price": 18 }
+      ]
+    },
+    {
+      "name": "面类",
+      "items": [
+        { "name": "老式炝锅面", "price": 8 },
+        { "name": "炒饼丝", "price": 10 },
+        { "name": "羊肉烩面", "price": "小份9元 / 大份10元" },
+        { "name": "清调面", "price": 7 },
+        { "name": "浆面", "price": 8 },
+        { "name": "大米", "price": 2 }
+      ]
+    }
+  ],
+  "contact": {
+    "phones": ["15738589876", "15738568283"]
+  }
+} 
