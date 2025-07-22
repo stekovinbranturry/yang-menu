@@ -164,12 +164,11 @@ body {
 
 @media (max-width: 768px) {
   .menu-container {
-    transform: scale(0.5);
+    transform: scale(var(--scale-ratio));
     transform-origin: 0 0; /* 设置变换原点为左上角 */
   }
-  }
+}
 
-// 菜单容器 - 完全嵌套
 .menu-container {
   background: white;
   padding: 40px 20px;

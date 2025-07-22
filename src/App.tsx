@@ -1,7 +1,7 @@
 import './App.scss'
 import menuData from './menuData.json'
 import html2canvas from 'html2canvas'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const isMobile = window.innerWidth <= 768
 
@@ -20,6 +20,13 @@ function App() {
   const [selectedItems, setSelectedItems] = useState<Set<string>>(new Set())
   const [sortType, setSortType] = useState<SortType>('none')
   const [showHotIcon, setShowHotIcon] = useState(true)
+  
+  useEffect(() => {
+    const scaleRatio = (window.outerWidth - 40) / 800
+    document.getElementById('root')?.style.setProperty('--scale-ratio', scaleRatio.toString())
+    
+  }, [])
+  
 
   const renderPrice = (price: number | string) => {
     if (typeof price === 'number') {
