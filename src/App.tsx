@@ -2,6 +2,8 @@ import './App.scss'
 import menuData from './menuData.json'
 import html2canvas from 'html2canvas'
 import { useEffect, useState } from 'react'
+import { Select, Switch, Button, Space, Card } from 'antd'
+import { DownloadOutlined } from '@ant-design/icons'
 
 const isMobile = window.innerWidth <= 768
 
@@ -98,40 +100,40 @@ function App() {
 
   return (
     <div className="app">
-      <div className="toolbar">
-        <div className="controls-group">
-          <div className="sort-controls">
-            <label htmlFor="sort-select">排序方式：</label>
-            <select 
-              id="sort-select"
-              value={sortType} 
-              onChange={(e) => setSortType(e.target.value as SortType)}
-              className="sort-select"
-            >
-              <option value="none">默认排序</option>
-              <option value="isHot">辣菜优先</option>
-              <option value="price">价格排序</option>
-            </select>
-          </div>
-          <div className="hot-icon-controls">
-            <label htmlFor="hot-icon-toggle">显示辣菜标志：</label>
-            <input
-              id="hot-icon-toggle"
-              type="checkbox"
-              checked={showHotIcon}
-              onChange={(e) => setShowHotIcon(e.target.checked)}
-              className="hot-icon-toggle"
-            />
-          </div>
-        </div>
-        <button 
-          onClick={captureMenu} 
-          disabled={isCapturing}
-          className="capture-btn"
-        >
-          {isCapturing ? '生成中...' : '下载菜单图片'}
-        </button>
-      </div>
+      <Card className="toolbar" style={{ marginBottom: 16 }}>
+        <Space size="large" align="center" direction={isMobile ? 'vertical' : 'horizontal'} style={{ width: '100%', justifyContent: 'space-between' }}>
+          <Space size="large" direction={isMobile ? 'vertical' : 'horizontal'}>
+            <Space>
+              <span>排序方式：</span>
+              <Select
+                value={sortType}
+                onChange={(value) => setSortType(value as SortType)}
+                style={{ width: 120 }}
+                options={[
+                  { value: 'none', label: '默认排序' },
+                  { value: 'isHot', label: '辣菜优先' },
+                  { value: 'price', label: '价格排序' }
+                ]}
+              />
+            </Space>
+            <Space>
+              <span>显示辣菜标志：</span>
+              <Switch
+                checked={showHotIcon}
+                onChange={setShowHotIcon}
+              />
+            </Space>
+          </Space>
+          <Button
+            type="primary"
+            icon={<DownloadOutlined />}
+            onClick={captureMenu}
+            loading={isCapturing}
+          >
+            {isCapturing ? '生成中...' : '下载菜单图片'}
+          </Button>
+        </Space>
+      </Card>
 
       <div id="menu-container" className="menu-container">
         <h1 className="menu-title">{menuData.title}</h1>

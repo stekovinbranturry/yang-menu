@@ -84,81 +84,27 @@ body {
   margin: 0 auto;
 }
 
-// 工具栏
+// 工具栏 - 使用 Ant Design 组件
 .toolbar {
-  text-align: center;
-  margin-bottom: 20px;
-  padding: 15px;
-  background: $background-light;
-  border-radius: $border-radius;
-  border: 1px solid $border-light;
-  @include flex-between;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.controls-group {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.sort-controls {
-  @include flex-center;
-  gap: 8px;
-  font-size: 14px;
-  color: $text-color;
+  .ant-card-body {
+    padding: 16px;
+  }
   
-  label {
+  .ant-space {
+    width: 100%;
+  }
+  
+  .ant-select {
+    min-width: 120px;
+  }
+  
+  .ant-switch {
+    margin-left: 8px;
+  }
+  
+  .ant-btn {
+    height: 32px;
     font-weight: 500;
-    white-space: nowrap;
-  }
-}
-
-.sort-select {
-  padding: 8px 12px;
-  font-size: 14px;
-  @include input-style;
-}
-
-.hot-icon-controls {
-  @include flex-center;
-  gap: 8px;
-  font-size: 14px;
-  color: $text-color;
-  
-  label {
-    font-weight: 500;
-    white-space: nowrap;
-  }
-}
-
-.hot-icon-toggle {
-  width: 16px;
-  height: 16px;
-  cursor: pointer;
-  accent-color: $primary-color;
-}
-
-.capture-btn {
-  background: $primary-color;
-  color: white;
-  padding: 12px 24px;
-  font-size: 16px;
-  font-weight: 500;
-  @include button-style;
-  
-  &:hover:not(:disabled) {
-    background: $primary-hover;
-    transform: translateY(-1px);
-    box-shadow: $box-shadow-hover;
-  }
-  
-  &:disabled {
-    background: $disabled-color;
-    cursor: not-allowed;
-    opacity: 0.7;
   }
 }
 
