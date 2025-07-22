@@ -1,7 +1,9 @@
-import './App.css'
+import './App.scss'
 import menuData from './menuData.json'
 import html2canvas from 'html2canvas'
 import { useState } from 'react'
+
+const isMobile = window.innerWidth <= 768
 
 // 定义菜品项的类型
 interface MenuItem {
@@ -65,12 +67,10 @@ function App() {
       const element = document.getElementById('menu-container')
       if (element) {
         const canvas = await html2canvas(element, {
-          scale: 2, // 提高图片质量
+          scale: isMobile ? 8 : 2, // 提高图片质量
           useCORS: true,
           allowTaint: true,
           backgroundColor: '#ffffff',
-          width: 800, // 设置固定宽度
-          height: 1131, // A4 比例高度 (800 * 1.414)
           scrollX: 0,
           scrollY: 0
         })
