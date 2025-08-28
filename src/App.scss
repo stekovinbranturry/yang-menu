@@ -143,13 +143,13 @@ body {
   }
 
   .menu-section {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
     
     h2 {
       text-align: center;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 8px;
       padding-bottom: 4px;
       margin-top: 8px;
       color: $text-color;
@@ -168,7 +168,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
-    row-gap: 4px;
+    row-gap: 0px;
   }
 
   .menu-item {
