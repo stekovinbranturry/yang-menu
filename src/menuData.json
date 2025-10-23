@@ -9,12 +9,7 @@
         { "name": "酸菜鱼", "price": 58, "isHot": true },
         { "name": "杨家炒鸡", "price": 45 },
         { "name": "罗山大肠", "price": 42, "isHot": true },
-        { "name": "傣族牛腩", "price": 38 },
         { "name": "肉片炒山菌", "price": 32 },
-        { "name": "东坡肉", "price": 38 },
-        { "name": "剁椒鱼头", "price": 68, "isHot": true },
-        { "name": "酱焖黄骨鱼", "price": 38 },
-        { "name": "干锅牛蛙", "price": 58, "isHot": true },
         { "name": "熬炒土鸡", "price": 58 },
         { "name": "干煸翅中", "price": 48, "isHot": true },
         { "name": "过浆鱼", "price": 48 },
@@ -38,18 +33,23 @@
         { "name": "锅巴大虾", "price": 48 },
         { "name": "辣子鸡", "price": 48, "isHot": true },
         { "name": "鱿鱼爱上虾", "price": 48, "isHot": true },
-        { "name": "香麻牛黄喉", "price": 42, "isHot": true }
+        { "name": "香麻牛黄喉", "price": 42, "isHot": true },
+        { "name": "爆炒腰片", "price": 32, "isHot": true, "isNew": true },
+        { "name": "口袋饼炒肉丁", "price": 26, "isNew": true },
+        { "name": "小炒月牙骨", "price": 28, "isHot": true, "isNew": true },
+        { "name": "粉条炒肉末", "price": 19, "isNew": true },
+        { "name": "干锅鸡杂", "price": 28, "isHot": true, "isNew": true },
+        { "name": "大肉粉皮", "price": 25, "isNew": true },
+        { "name": "红烧里脊", "price": 28, "isNew": true },
+        { "name": "粉丝裹虾", "price": 38, "isNew": true }
       ]
     },
     {
       "name": "素菜",
       "items": [
         { "name": "螺丝椒荷包蛋", "price": 18, "isHot": true },
-        { "name": "脆皮小南瓜", "price": 15 },
         { "name": "风味土豆片", "price": 18 },
-        { "name": "蒜香空心菜", "price": 15 },
         { "name": "小炒鹿茸菌", "price": 28 },
-        { "name": "淋油豆皮", "price": 16, "isHot": true },
         { "name": "椒麻素毛肚", "price": 22, "isHot": true },
         { "name": "剁椒嫩豆腐", "price": 18, "isHot": true },
         { "name": "米椒臭豆腐", "price": 22, "isHot": true },
@@ -69,7 +69,8 @@
         { "name": "干锅千叶豆腐", "price": 22 },
         { "name": "木桶烩三菌", "price": 22 },
         { "name": "烧三样", "price": 18 },
-        { "name": "石锅凉粉", "price": 18 }
+        { "name": "石锅凉粉", "price": 18 },
+        { "name": "外婆菜炒鸡蛋", "price": 22, "isNew": true }
       ]
     },
     {
@@ -81,8 +82,7 @@
         { "name": "豆腐汤", "price": 14 },
         { "name": "红薯汤", "price": 14 },
         { "name": "鸡蛋汤", "price": 12 },
-        { "name": "玉米羹", "price": 12 },
-        { "name": "红米山楂汤", "price": 12 }
+        { "name": "玉米羹", "price": 12 }
       ]
     },
     {
