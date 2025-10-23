@@ -144,7 +144,7 @@ function App() {
               <h2>{category.name}</h2>
               <div className="menu-items">
                 {sortItems(category.items).map((item, itemIndex) => (
-                  <div key={itemIndex} className="menu-item" style={{fontSize: typeof item.price === 'number' ? '16px' : '14px'}}>
+                  <div key={itemIndex} className="menu-item" style={{fontSize: typeof item.price === 'number' ? '16px' : '16px'}}>
                     <span className='item-name'>{item.name} {showHotIcon && item.isHot ? '🌶' : ''}</span>
                     <span className="dots"></span>
                     <span className="price">{renderPrice(item.price)}</span>

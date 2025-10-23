@@ -4,105 +4,98 @@
     {
       "name": "锅底",
       "items": [
-        { "name": "清汤锅", "price": 0 },
-        { "name": "番茄锅", "price": 0 },
-        { "name": "麻辣锅", "price": 0 },
-        { "name": "鸳鸯锅", "price": 0 }
+        { "name": "清汤锅", "price": 15 },
+        { "name": "鸳鸯锅", "price": 25 }
       ]
     },
     {
       "name": "招牌特色",
       "items": [
-        { "name": "鲜切吊龙", "price": 0 },
-        { "name": "鲜切羊里脊", "price": 0 },
-        { "name": "高钙羊肉", "price": 0 },
-        { "name": "肥羊", "price": 0 },
-        { "name": "肥牛", "price": 0 }
+        { "name": "鲜切吊龙", "price": 26 },
+        { "name": "鲜切羊里脊", "price": 26 },
+        { "name": "肥羊", "price": "42元 / 斤" },
+        { "name": "肥牛", "price": "42元 / 斤" }
       ]
     },
     {
       "name": "肉类",
       "items": [
-        { "name": "麻辣牛肉", "price": 0 },
-        { "name": "筷头牛肉", "price": 0 },
-        { "name": "毛肚", "price": 0 },
-        { "name": "千层肚", "price": 0 },
-        { "name": "黄喉", "price": 0 },
-        { "name": "鸭肠", "price": 0 },
-        { "name": "大刀腰片", "price": 0 },
-        { "name": "牛舌", "price": 0 },
-        { "name": "脑花", "price": 0 },
-        { "name": "火箭鱿鱼", "price": 0 }
+        { "name": "麻辣肉片", "price": 18 },
+        { "name": "毛肚", "price": 25 },
+        { "name": "千层肚", "price": 25 },
+        { "name": "黄喉", "price": 25 },
+        { "name": "鸭肠", "price": 22 },
+        { "name": "大刀腰片", "price": 22 },
+        { "name": "脑花", "price": "10元 / 个" },
+        { "name": "火箭鱿鱼", "price": 18 }
       ]
     },
     {
       "name": "丸滑",
       "items": [
-        { "name": "虾滑", "price": 0 },
-        { "name": "黑虎虾滑", "price": 0 },
-        { "name": "贡菜丸子", "price": 0 },
-        { "name": "香菜牛肉丸", "price": 0 },
-        { "name": "甜不辣", "price": 0 },
-        { "name": "鱼豆腐", "price": 0 },
-        { "name": "鱼籽福袋", "price": 0 }
+        { "name": "虾滑", "price": 22 },
+        { "name": "贡菜猪肉丸子", "price": 20 },
+        { "name": "香菜牛肉丸", "price": 20 },
+        { "name": "甜不辣", "price": 8 },
+        { "name": "鱼豆腐", "price": 8 },
+        { "name": "鱼籽福袋", "price": "5元 / 个" },
+        { "name": "大青虾", "price": 28 }
       ]
     },
     {
       "name": "豆制品",
       "items": [
-        { "name": "干豆皮", "price": 0 },
-        { "name": "千张", "price": 0 },
-        { "name": "老豆腐", "price": 0 },
+        { "name": "干豆皮", "price": 10 },
+        { "name": "千张", "price": 8 },
+        { "name": "老豆腐", "price": 8 },
         { "name": "起泡豆干", "price": 0 },
-        { "name": "豆腐串", "price": 0 },
-        { "name": "腐竹", "price": 0 }
+        { "name": "豆腐串", "price": 8 },
+        { "name": "腐竹", "price": 8 }
       ]
     },
     {
       "name": "菌菇",
       "items": [
-        { "name": "东北黑木耳", "price": 0 },
-        { "name": "平菇", "price": 0 },
-        { "name": "干茶树菇", "price": 0 },
-        { "name": "香菇", "price": 0 },
-        { "name": "金针菇", "price": 0 },
-        { "name": "杏鲍菇", "price": 0 },
-        { "name": "鲜味菇", "price": 0 },
-        { "name": "牛肝菌", "price": 0 }
+        { "name": "东北黑木耳", "price": 6 },
+        { "name": "平菇", "price": 6 },
+        { "name": "香菇", "price": 8 },
+        { "name": "金针菇", "price": 8 },
+        { "name": "杏鲍菇", "price": 6 },
+        { "name": "鲜味菇", "price": 6 }
       ]
     },
     { 
       "name": "蔬菜",
       "items": [
-        { "name": "红薯", "price": 0 },
-        { "name": "土豆", "price": 0 },
-        { "name": "青笋", "price": 0 },
-        { "name": "香菜", "price": 0 },
-        { "name": "菠菜", "price": 0 },
-        { "name": "生菜", "price": 0 },
-        { "name": "大白菜", "price": 0 },
-        { "name": "油麦菜", "price": 0 },
-        { "name": "娃娃菜", "price": 0 },
-        { "name": "白萝卜", "price": 0 },
-        { "name": "冬瓜", "price": 0 }
+        { "name": "红薯", "price": 6 },
+        { "name": "土豆", "price": 5 },
+        { "name": "青笋", "price": 6 },
+        { "name": "香菜", "price": 6 },
+        { "name": "菠菜", "price": 5 },
+        { "name": "生菜", "price": 5 },
+        { "name": "大白菜", "price": 5 },
+        { "name": "油麦菜", "price": 5 },
+        { "name": "娃娃菜", "price": 8 },
+        { "name": "白萝卜", "price": 5 },
+        { "name": "冬瓜", "price": 5 }
       ]
     },
     {
       "name": "小吃",
       "items": [
-        { "name": "茴香小油条", "price": 0 },
-        { "name": "小酥肉", "price": 0 },
-        { "name": "小年糕", "price": 0 },
-        { "name": "牛肉丸", "price": 0 }
+        { "name": "茴香小油条", "price": 12 },
+        { "name": "小酥肉", "price": 18 },
+        { "name": "牛肉丸", "price": 25 },
+        { "name": "黄金奶酥", "price": 18 }
       ]
     },
     {
       "name": "粉/面",
       "items": [
-        { "name": "烩面", "price": 0 },
-        { "name": "方便面", "price": 0 },
-        { "name": "手擀面", "price": 0 },
-        { "name": "川粉", "price": 0 }
+        { "name": "烩面", "price": "2元 / 片" },
+        { "name": "方便面", "price": "2元 / 袋" },
+        { "name": "手擀面", "price": "4元 / 份" },
+        { "name": "川粉", "price": 8 }
       ]
     }
   ],
