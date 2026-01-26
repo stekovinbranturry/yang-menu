@@ -76,12 +76,13 @@
     {
       "name": "汤类",
       "items": [
+        { "name": "三鲜汤", "price": 28 },
         { "name": "肚丝汤", "price": 28 },
         { "name": "西湖牛肉羹", "price": 20 },
         { "name": "白丸汤", "price": 18 },
         { "name": "豆腐汤", "price": 14 },
         { "name": "红薯汤", "price": 14 },
-        { "name": "鸡蛋汤", "price": 12 },
+        { "name": "鸡蛋汤", "price": 14 },
         { "name": "玉米羹", "price": 12 }
       ]
     },

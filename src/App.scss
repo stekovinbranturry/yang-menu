@@ -69,7 +69,6 @@ body {
   background: white;
   color: $text-color;
   line-height: 1.2;
-  font-weight: 500;
 }
 
 #root {
@@ -116,10 +115,109 @@ body {
 }
 
 .menu-container {
-  background: white;
-  padding: 40px 20px;
+  // 中式背景设计 - 仿宣纸效果
+  background: 
+    // 主背景色 - 米白色仿宣纸效果
+    linear-gradient(180deg, #fefdf8 0%, #faf8f0 100%),
+    // 淡雅的纹理效果
+    radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(139, 69, 19, 0.02) 0%, transparent 50%),
+    radial-gradient(circle at 50% 50%, rgba(139, 69, 19, 0.01) 0%, transparent 70%),
+    // 细微的纸张纹理
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(139, 69, 19, 0.01) 2px,
+      rgba(139, 69, 19, 0.01) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(139, 69, 19, 0.01) 2px,
+      rgba(139, 69, 19, 0.01) 4px
+    );
+  
+  // 添加传统中式边框
+  border: 3px double #8b6914;
+  position: relative;
+  
+  // 内部装饰边框
+  &::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid rgba(139, 69, 19, 0.15);
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+  
+  // 四角装饰纹样
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      // 左上角
+      linear-gradient(135deg, #8b6914 0%, transparent 2%),
+      linear-gradient(225deg, #8b6914 0%, transparent 2%),
+      // 右上角
+      linear-gradient(45deg, #8b6914 0%, transparent 2%),
+      linear-gradient(-45deg, #8b6914 0%, transparent 2%),
+      // 左下角
+      linear-gradient(45deg, #8b6914 0%, transparent 2%),
+      linear-gradient(135deg, #8b6914 0%, transparent 2%),
+      // 右下角
+      linear-gradient(-45deg, #8b6914 0%, transparent 2%),
+      linear-gradient(225deg, #8b6914 0%, transparent 2%);
+    background-size: 30px 30px;
+    background-position: 
+      0 0, 0 0,
+      100% 0, 100% 0,
+      0 100%, 0 100%,
+      100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    pointer-events: none;
+  }
+  
+  // 装饰性印章（可选）- 右下角
+  &.with-seal {
+    &::after {
+      content: '杨';
+      position: absolute;
+      bottom: 60px;
+      right: 40px;
+      width: 60px;
+      height: 60px;
+      border: 3px solid #d9534f;
+      border-radius: 50%;
+      color: #d9534f;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: "STLiti", "LiSu", "隶书", "STKaiti", serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: rotate(-15deg);
+      opacity: 0.6;
+      z-index: 3;
+      background: transparent;
+    }
+  }
+  
+  padding: 20px;
   border-radius: $border-radius;
-  box-shadow: $box-shadow;
+  box-shadow: 
+    $box-shadow,
+    inset 0 0 20px rgba(139, 69, 19, 0.03); // 内阴影增加层次感
   aspect-ratio: 1 / 1.414;
   width: 800px;
   margin: 0 auto;
@@ -129,17 +227,42 @@ body {
 
   .menu-title {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
     font-weight: bold;
-    margin-bottom: 16px;
-    color: $text-color;
+    margin-bottom: 10px;
+    color: #5d4e37; // 深棕色，更有中式韵味
     flex-shrink: 0;
+    // 使用隶书字体，更有传统餐馆的感觉
+    font-family: "STLiti", "LiSu", "隶书", "STKaiti", "KaiTi", "楷体", "Microsoft YaHei", serif;
+    letter-spacing: 10px;
+    text-shadow: 2px 2px 3px rgba(139, 69, 19, 0.15);
+    position: relative;
+    padding: 10px 0;
+    z-index: 2;
+    
+    // 标题下装饰线
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, 
+        transparent 0%, 
+        #8b6914 20%, 
+        #8b6914 80%, 
+        transparent 100%);
+    }
   }
 
   .menu-content {
     width: 100%;
     flex: 1;
     padding-right: 10px;
+    position: relative;
+    z-index: 2;
   }
 
   .menu-section {
@@ -147,15 +270,36 @@ body {
     
     h2 {
       text-align: center;
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 20px;
+      font-weight: 600;
       margin-bottom: 16px;
-      padding-bottom: 4px;
-      margin-top: 8px;
-      color: $text-color;
-      border-bottom: 1px solid $text-color;
+      padding-bottom: 6px;
+      margin-top: 12px;
+      color: #6b5d4f; // 中等棕色
+      border-bottom: 1px solid rgba(139, 69, 19, 0.3);
       position: relative;
-      letter-spacing: 1px;
+      letter-spacing: 4px;
+      // 使用黑体，更清晰醒目
+      font-family: "STHeiti", "SimHei", "黑体", "Microsoft YaHei", sans-serif;
+      
+      // 分类标题装饰
+      &::before,
+      &::after {
+        content: '◆';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(139, 69, 19, 0.4);
+        font-size: 10px;
+      }
+      
+      &::before {
+        left: 30%;
+      }
+      
+      &::after {
+        right: 30%;
+      }
     }
     
     &:first-child h2 {
@@ -179,6 +323,8 @@ body {
 
     .item-name {
       flex-shrink: 0;
+      color: #4a3f36; // 深色文字，增强对比度
+      // font-weight: 500;
     }
 
     .dots {
@@ -191,6 +337,8 @@ body {
 
     .price {
       white-space: nowrap;
+      color: #6b5d4f;
+      // font-weight: 500;
     }
 
     .custom-checkbox {
@@ -221,9 +369,16 @@ body {
     text-align: center;
     flex-shrink: 0;
     margin-bottom: 16px;
+    margin-top: 10px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(139, 69, 19, 0.2);
+    position: relative;
+    z-index: 2;
     
     p {
       font-size: 16px;
+      color: #6b5d4f;
+      letter-spacing: 1px;
     }
   }
 
